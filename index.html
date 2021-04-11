@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=”en”>
+<html lang="en">
     <head>
         <title>My Journal</title>
         <meta charset="UTF-8">
@@ -32,7 +32,7 @@
                         <br>
                         <details>
                             <summary>Meme <em>#CSSDaily</em></summary>
-                            <img src="https://preview.redd.it/bptzx7ur4uj11.jpg?auto=webp&s=e6660e4545b2463db71c4acb481624730914f8e1" style="width: 100%;">
+                            <img src="https://preview.redd.it/bptzx7ur4uj11.jpg?auto=webp&s=e6660e4545b2463db71c4acb481624730914f8e1" style="width: 100%;" alt="css meme">
                         </details>
                     </p>
                 </div>
@@ -43,7 +43,7 @@
                     <p>
                         Some random pictures of <b>Paris</b>:
                         <br><br>
-                        <img src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg">
+                        <img src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg" alt="paris">
                     </p>
                     Looks pretty isn't it?
                 </div>
@@ -55,11 +55,12 @@
                     <ol>
                     <li><video style="width: 100%;" controls>
                         <source src="https://content.videvo.net/videvo_files/video/free/2013-07/originalContent/hd0079.mov" type="video/mp4">
-                    </video></li><br>
+                    </video></li>
                     
                     <li><audio controls>
                         <source src="https://nl02.mp3snow.com/7f1d10e15bfb5f1b7d087/Mili%20-%20world.execute%28me%29%3B.mp3" type="audio/mpeg">
                     </audio></li>
+                    </ol>
                 </div>
             </section>
         </main>
@@ -73,7 +74,7 @@
                 <label for="author">Author: </label><br>
                     <input type="text" id="author" name="author"><br>
                 <label for="content">Content: </label><br>
-                    <textarea name="content" rows="5" cols="50"></textarea><br>
+                    <textarea id="content" name="content" rows="5" cols="50"></textarea><br>
                 
                 <label for="cate">Category:</label>
                 <select id="cate" name="cate">
@@ -82,7 +83,7 @@
                 </select><br><br>
 
                 <label for="temp">Template: </label>
-                <input list="temp">
+                <input id="temp" list="temp">
                 <datalist id="temp">
                     <option value="Classic">
                     <option value="Modern">
@@ -95,7 +96,7 @@
                     <label>Private</label><br>
                 </fieldset>
                 <br>
-                <input type="checkbox" name="checkbox">
+                <input type="checkbox" id="checkbox" name="checkbox">
                     <label for="checkbox"><i>I'm a robot XD</i></label><br>
                 <input type="submit">
                 <button type="button">Reset</button>
