@@ -1,0 +1,109 @@
+body {
+    background-image: url("https://www.coreldraw.com/static/cdgs/images/pages/seo/tips/photo/basics/blur-background/blur-background-og.jpg");
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: -150px;
+}
+
+.nav, header nav {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    border: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+@media (min-width: 800px) {
+    #page-nav {
+        border-style: inset;
+        border-width: 10px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-color: bisque;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        right: 0in;
+        top: 5%;
+        backdrop-filter: blur(5px);
+        position: fixed;
+        grid-column-start: 2;
+        grid-column-end: end;
+    }
+    main {
+        grid-column-start: 1;
+        grid-column-end: col1-end;
+    }
+}
+
+@media (max-width: 800px) {
+    #page-nav {
+        display: none;
+    }
+}
+
+#page-nav h3 ~ a {
+    padding-left: 1ex;
+    color: #89FF00;
+}
+
+main > section {
+    padding-bottom: 1em;
+}
+
+:active strong, :active b {
+    color: red;
+}
+
+strong:active, b:active {
+    text-decoration: underline dotted grey;
+}
+
+image[id="css_meme"] {
+    /* Meme implementation XD */
+    position: relative;
+}
+
+.image, video {
+    width: 100%;
+}
+
+*.day {
+    background-color: rgba(237, 237, 237, 0.4);
+    border: 4px;
+    border-radius: 6px;
+    padding: 1px 10px 1cm 10px;
+    text-align: left;
+    backdrop-filter: blur(5px);
+    margin-top: 1px;
+}
+
+:hover.day {
+    background-color: rgba(237, 237, 237, 0.7);
+}
+
+video + audio {
+    padding-bottom: 1px;
+    margin: 1px 1px 1px 1px;
+}
+
+.date {
+    color: hsl(0, 0%, 45%);
+}
+
+footer form {
+    /* background-color: rgb(237, 237, 237); */
+    border-radius: 6px;
+    border: 6ch;
+    backdrop-filter: blur(5px);
+}
+
+footer form #content, footer form input {
+    background-color:rgba(245, 245, 245, 0.5);
+    backdrop-filter: blur(5px);
+    margin: auto;
+}
