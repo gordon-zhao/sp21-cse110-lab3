@@ -2,7 +2,7 @@ body {
     background-image: url("https://www.coreldraw.com/static/cdgs/images/pages/seo/tips/photo/basics/blur-background/blur-background-og.jpg");
     background-attachment: fixed;
     display: grid;
-    grid-template-columns: -150px;
+    grid-template-columns: 800px;
 }
 
 .nav, header nav {
@@ -34,7 +34,7 @@ main {
         grid-column-start: 2;
         grid-column-end: end;
     }
-    main {
+    main, footer {
         grid-column-start: 1;
         grid-column-end: col1-end;
     }
